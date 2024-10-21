@@ -1,0 +1,651 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "pt-sans", sans-serif;
+    background-color: #BCAAA4;
+}
+
+.star:last-child {
+    color: white;
+}
+
+.star .active {
+    color: yellow;
+}
+
+.section-title {
+    color: #533a7aff;
+    text-align: center;
+    font-size: 2em;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-family: "pt-sans", sans-serif;
+}
+
+.section-hr {
+    width: 20%;
+    height: 5px;
+    margin: auto;
+    background-color: rgb(75, 69, 85);
+    margin: 5px auto 10px;
+    transition: 0.5s;
+}
+
+.section-information:hover .section-hr {
+    width: 25%;
+}
+
+
+
+
+/*HEADER .................................................. */
+
+.header-container {
+    width: 90%;
+    height: 80px;
+    margin: auto;
+}
+
+.header-parent {
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: space-evenly;
+    height: 100%;
+    padding-top: 20px;
+    background-color: rgb(228, 214, 204);
+    font-family: "pt-sans", sans-serif;
+
+}
+
+.hrader-img{    
+    font-size: 4.5em ;
+    margin-top: -10px;
+}
+
+
+.header-container {
+    width: 90%;
+    margin: auto;
+}
+
+.header-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+
+.header-navigation-link>a>li {
+    color: black;
+    display: inline-block;
+    padding: 10px 15px;
+    
+    position: relative;
+    
+    
+}
+.header-navigation-link>a {
+    margin-left: 30px;
+}
+.table-dropdown {
+    position: absolute;
+    z-index: 10;
+
+    background-color: #BCAAA4;
+
+    padding: 10px;
+    
+    border: 1px solid black;
+    width: 450%;
+    top:110%;
+    left: -1px;
+
+    transform: scale(0, 0);
+    transition: 0.5s;
+}
+
+
+.table-dropdown ul {
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 50px;
+}
+
+.table-dropdown>ul>li:first-child {
+    text-decoration: underline dotted 1px black;
+    text-underline-offset: 0.5em;
+    padding-bottom: 1em;
+}
+
+.header-navigation-link>a:first-child:hover .table-dropdown {
+    transform: scale(1, 1);
+}
+
+.table-dropdown>ul:last-child{
+    margin-right: 0px;
+}
+
+
+
+
+/* ///////////////////////////////////////////////// */
+
+.HR {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+.div1 {
+    width: 0;
+    height: 1px;
+
+
+    background-color: black;
+    transition: 0.5s;
+
+}
+
+.header-navigation-link>a>li:hover .div1 {
+    width: 100%;
+    width: 100%;
+}
+
+.div2 {
+
+    width: 0;
+    height: 1px;
+
+
+    background-color: black;
+    transition: 0.5s;
+}
+
+.header-navigation-link>a>li:hover .div2 {
+    width: 100%;
+}
+
+/* ///////////////////////////////////////////////////////////////////////// */
+
+.V {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
+.V>div {
+
+    position: absolute;
+    transition: 1s;
+
+
+    height: 0%;
+    width: 1px;
+
+    background-color: black;
+}
+
+.div3 {
+    align-self: flex-end;
+}
+
+.header-navigation-link>a>li:hover .V>div {
+    height: 100%;
+}
+
+
+/* /////////////////////////////////////////// */
+.header-iconsForService{
+    display: flex ;
+    /* justify-content: space-between; */
+}
+.header-iconsForService>li{
+    list-style-type: none;
+    margin-right: 20px;
+    
+}
+.header-iconsForService>li>i{
+    font-size: 2em;
+}
+.YourBag {
+    text-transform: capitalize;
+}
+
+
+.zero {
+    padding: 3px;
+    background-color: aliceblue;
+    color: aqua;
+    border-radius: 50%;
+    margin: 0px -4px;
+}
+
+/* HEADER ............................................. */
+/* SEC-1 .............................................. */
+.sec1{
+    margin: 30px 0px;
+}
+.sec1-container {
+    width: 90%;
+    margin: auto;
+
+    position: relative;
+}
+
+.sec1-img {
+    width: 100%;
+    height: 80vh;
+    margin-bottom: 10px;
+}
+
+.information-website {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+
+.information-website h2 {
+    font-size: 7em;
+    color: white;
+    text-shadow: 10px 10px 20px gray;
+}
+
+.information-website button {
+    font-size: 0.9em;
+    margin: 30px 0px 0px 5px;
+    padding: 5px 10px;
+    text-transform: capitalize;
+}
+
+.information-website button:hover {
+    color: white;
+    background-color: gray;
+    border: 2px solid gray;
+}
+
+.Watch-change {
+    color: gray;
+}
+
+/* SEC-1 .............................................. */
+
+/* SEC-2 ................................................. */
+/* PART1 ...................................................... */
+.sec3-container {
+    /* background-color: aqua; */
+    width: 90%;
+    margin: auto;
+}
+
+.sec3-parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.sec3-products {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    text-transform: capitalize;
+
+    margin: 30px 0px;
+
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.sec3-item-img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.sec3-item-products {
+    width: 20%;
+    position: relative;
+}
+
+.description1-item-products {
+    color: rgb(235, 221, 221);
+}
+
+.icon-when-hover-on-item-products {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    width: 40px;
+    height: 40px;
+
+
+    text-align: center;
+
+    background-color: rgb(39, 38, 38);
+    color: white;
+    padding: 5px;
+
+    opacity: 0;
+
+}
+
+.sec3-item-products:hover .icon-when-hover-on-item-products {
+    opacity: 1;
+}
+
+/* PART1 ...................................................... */
+/* PART2............................................................. */
+.sec3-comment-with-discount {
+    margin: 20px 0px;
+
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+
+
+
+}
+
+.sec3-comment {
+    border: 1px solid black;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    padding: 10px;
+
+    width: 44%;
+
+}
+
+.sec3-header-comment {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.sec3-header-comment .icon {
+    margin-top: 15px;
+    margin-right: 5px;
+    font-size: 50px;
+
+}
+
+.sec3-information-header-comment {
+    margin: 0px 0px 10px 0px;
+}
+
+.sec3-information-comment {
+    margin: 20px 0px;
+}
+
+.sec3-movements-between-comments {
+    width: 30%;
+
+    display: flex;
+    flex-flow: row;
+
+    justify-content: space-evenly;
+    align-self: flex-end;
+
+    margin-top: 60px;
+}
+
+.sec3-movements-between-comments span {
+    width: 30%;
+    height: 2px;
+
+    margin: 0px 10px;
+    padding: 0px 10px;
+
+    background-color: #3E2723;
+}
+
+.item-contain-img-with-show-discount {
+    position: relative;
+    transition: 1s;
+    width: 25%;
+    height: 250px;
+    border: 1px solid black;
+}
+
+.item-contain-img-with-show-discount:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.img-discount {
+    width: 100%;
+    height: 100%;
+}
+
+.information-discount {
+    position: absolute;
+
+    top: 10px;
+    left: 10px;
+
+    color: white;
+}
+
+
+/* PART2............................................................. */
+/* PART3 .............................................................  */
+.services-container{
+    width: 90%;
+    margin: auto ;
+}
+.services-parent {
+    background-color: black;
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    justify-content: space-between;
+    
+    height: 140px;
+    
+    margin-bottom: 50px;
+    }
+
+.item-service {
+    padding: 0px 46px;
+    background-color: #BCAAA4;
+    text-align: center;
+    line-height: 25px;
+
+}
+
+
+.movement-between-icon {
+    position: relative;
+
+    height: 60px;
+
+    /* background-color: gray; */
+
+    overflow: hidden;
+    /* border: 1px solid black; */
+
+    padding: 0px 46px;
+
+    font-size: 3em;
+}
+
+.service-icon {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+
+    transition: 0.5s;
+
+}
+
+.service-icon-under {
+    color: brown;
+    top: 200%;
+
+}
+
+
+.item-service:hover .service-icon-up {
+    top: -100%;
+}
+
+.item-service:hover .service-icon-under {
+    top: 50%;
+}
+
+
+/* PART3 .............................................................  */
+
+/* SEC-2 ....................................................  */
+
+/* SEC-3 ....................................................  */
+
+.featured-product-types {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    font-size: small;
+
+    margin: 20px 0px;
+}
+
+.featured-product-types li {
+    display: inline-block;
+    margin: 15px;
+}
+
+.featured-container {
+    width: 90%;
+    margin: auto;
+}
+
+.featured-products {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 500px);
+
+    grid-gap: 20px 50px;
+
+
+
+}
+
+.featured-product {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.featured-product-img {
+    position: relative;
+    width: 100%;
+
+}
+
+.featured-product-hover {
+    position: relative;
+}
+
+.featured-product-img-default,
+.featured-product-img-hover,
+.featured-product-hover-icon {
+    width: 100%;
+    height: 400px;
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+}
+
+.featured-product-hover-icon {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.featured-product-hover-icon a {
+    display: block;
+    width: 40px;
+    height: 40px;
+
+    margin-left: 5px;
+
+    color: white;
+    background-color: #3E2723;
+
+    text-align: center;
+    line-height: 40px;
+
+    font-size: 20px;
+
+}
+
+
+
+.featured-product-hover {
+    transform: rotateY(90deg);
+    transition: 0.3s;
+    opacity: 0.7;
+}
+
+.featured-product-img:hover .featured-product-hover {
+    transform: rotateY(0deg);
+}
+
+
+
+
+
+
+/* SEC-3 ....................................................  */
